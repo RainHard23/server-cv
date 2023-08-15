@@ -46,6 +46,9 @@ app.post('/sendMessage', async function (req, res) {
 
     res.send('ok')
 })
-app.listen(3010, function () {
+
+const port = process.env.REACT_APP_BACK_URL || 3010
+
+app.listen(port, function () {
     console.log("kekeke")
 })
